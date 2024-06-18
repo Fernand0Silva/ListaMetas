@@ -1,0 +1,32 @@
+@model FrontEnd_Tarefa.MetasViewModel
+@{
+    ViewBag.Title = "Detalhes do Personagem";
+}
+<h2>Detalhes da Lista</h2>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>@Html.DisplayNameFor(model => model.Id)</dt>
+        <dd>@Html.DisplayFor(model => model.Id)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Nome)</dt>
+        <dd>@Html.DisplayFor(model => model.Nome)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Meta)</dt>
+        <dd>@Html.DisplayFor(model => model.Meta)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Valor)</dt>
+        <dd>@Html.DisplayFor(model => model.Valor)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Tempo)</dt>
+        <dd>@Html.DisplayFor(model => model.Tempo)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Urgencia)</dt>
+        <dd>@Html.DisplayFor(model => model.Urgencia)</dd>
+        
+    </dl>
+</div>
+<p>	
+    @Html.ActionLink("Editar","Edit", new {id = Model.Id})
+    @Html.ActionLink("Retornar", "Index")
+</p>
